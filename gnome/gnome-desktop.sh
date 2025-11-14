@@ -39,6 +39,9 @@ exclude_pkgs=(
 	gnome-tour
 	malcontent-control
 	malcontent-ui-libs
+	papers
+	decibals
+	showtime
 )
 exclude_string=$(
 	IFS=,
