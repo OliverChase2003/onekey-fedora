@@ -1,9 +1,9 @@
 ## gnome desktop
 
 ## default user dirs
-download_dir = "$HOME/Downloads"
-document_dir = "$HOME/Documents"
-software_dir = "$HOME/Softwares"
+download_dir = "$HOME/downloads"
+document_dir = "$HOME/documents"
+software_dir = "$HOME/softwares"
 
 ## list excluded pkgs
 exclude_pkgs=(
@@ -42,6 +42,7 @@ exclude_pkgs=(
 	papers
 	decibals
 	showtime
+	ptyxis
 )
 exclude_string=$(
 	IFS=,
@@ -62,9 +63,16 @@ sudo dnf install -y \
 	langpacks-core-zh_CN
 ## install some basic desktop apps
 sudo dnf install -y \
+	alacritty \
 	gnome-extensions-app \
 	gnome-tweaks \
 	gthumb \
 	celluloid
+
+## nautilus
+sudo dnf copr enable monkeygold/nautilus-open-any-terminal -y
+sudo dnf install nautilus-open-any-terminal
+gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal alacritty
+
 ## set graphic as default
 sudo systemctl set-default graphical.target

@@ -17,4 +17,4 @@ mkdir -p \
 	$HOME/.cache \
 	$HOME/.local
 
-## cp ./user-dirs.dirs $HOME/.config
+cp ./user-dirs.dirs $HOME/.config
