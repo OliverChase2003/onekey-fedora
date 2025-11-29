@@ -41,8 +41,3 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Super
 gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "['<Super><Alt>l']" ## 锁屏
 gsettings set org.gnome.settings-daemon.plugins.media-keys logout "['<Super><Alt>Escape']" ## 登出
 
-## default terminal for nautilus
-gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal alacritty
-gsettings set com.github.stunkymonkey.nautilus-open-any-terminal keybindings "['<Super><Alt>t']"
-gsettings set com.github.stunkymonkey.nautilus-open-any-terminal new-tab true
-gsettings set com.github.stunkymonkey.nautilus-open-any-terminal flatpak system
