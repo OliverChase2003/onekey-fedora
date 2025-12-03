@@ -18,6 +18,7 @@ chmod +x "${software_dir}/WhiteSur-gtk-theme/install.sh" ## enable .sh file
 chmod +x "${software_dir}/WhiteSur-gtk-theme/tweaks.sh"  ## enable .sh file
 
 sh "${software_dir}/WhiteSur-gtk-theme/install.sh" \
+	--dest "/home/oliver/.local/share/themes/" \
 	--opacity normal \
 	--color light \
 	--nautilus glassy \

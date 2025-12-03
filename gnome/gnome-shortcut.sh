@@ -5,6 +5,7 @@ gsettings set org.gnome.shell.keybindings focus-active-notification "[]" ## 显�
 gsettings set org.gnome.shell.keybindings toggle-application-view "[]" ## 显示所有应用（禁用，用win-win代替）
 gsettings set org.gnome.shell.keybindings toggle-quick-settings "[]" ## 快速设置（禁用）
 gsettings set org.gnome.settings-daemon.plugins.media-keys help "[]" ## 帮助（禁用）
+gsettings set org.gnome.mutter.keybindings switch-monitor "[]" ## 屏幕方案设置
 
 gsettings set org.gnome.desktop.wm.keybindings move-to-monitor-left "[]" ## 窗口左移显示器（禁用）
 gsettings set org.gnome.desktop.wm.keybindings move-to-monitor-down "[]" ## 窗口上移显示器（禁用）
