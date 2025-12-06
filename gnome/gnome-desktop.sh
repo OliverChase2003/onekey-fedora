@@ -40,7 +40,7 @@ exclude_pkgs=(
 	malcontent-control
 	malcontent-ui-libs
 	papers
-	decibals
+	decibels
 	showtime
 	ptyxis
 )
