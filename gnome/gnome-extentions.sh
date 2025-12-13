@@ -25,6 +25,7 @@ extensions=(
 	user-theme@gnome-shell-extensions.gcampax.github.com
 	workspace-indicator@gnome-shell-extensions.gcampax.github.com
 	dash-to-dock@micxgx.gmail.com
+	input-source-dbus-interface@raiden_fumo ## provide gdbus api to auto switch im in vim like editor
 )
 
 for ext in "${extensions[@]}"; do
@@ -32,8 +33,3 @@ for ext in "${extensions[@]}"; do
 	gnome-extensions-cli install "$ext"
 done
 
-## switch input source api
-git clone https://github.com/herrscher-of-sleeping/gnome-input-source-dbus-interface \
-	~/${software_dir}/gnome-input-source-dbus-interface/
-cd ~/${software_dir}/gnome-input-source-dbus-interface/
-make install ## install 
