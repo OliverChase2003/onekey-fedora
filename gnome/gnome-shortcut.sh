@@ -21,10 +21,10 @@ gsettings set org.gnome.shell.keybindings switch-to-application-7 "[]" ## 打开
 gsettings set org.gnome.shell.keybindings switch-to-application-8 "[]" ## 打开快捷栏8的应用（禁用）
 gsettings set org.gnome.shell.keybindings switch-to-application-9 "[]" ## 打开快捷栏9的应用（禁用）
 
-gsettings set org.gnome.mutter.keybindings toggle-tiled-left "['<Super>h']" ## 左分屏
 gsettings set org.gnome.desktop.wm.keybindings unmaximize "['<Super>j']" ## 取消最大化
 gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>k']" ## 最大化
 gsettings set org.gnome.desktop.wm.keybindings minimize "['<Super><Shift>k']" ## 最小化
+gsettings set org.gnome.mutter.keybindings toggle-tiled-left "['<Super>h']" ## 左分屏
 gsettings set org.gnome.mutter.keybindings toggle-tiled-right "['<Super>l']" ## 右分屏
 gsettings set org.gnome.desktop.wm.keybindings move-to-center "['<Super>c']" ## 把窗口移到中央
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Super>f']" ## toggle 全屏
@@ -37,8 +37,10 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Supe
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Super>n']" ## 进入右边工作区
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-last "['<Super>e']" ## 进入最后一个工作区
 
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left "['<Super><Shift>comma']" ## 窗口移到左边工作区
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Super><Shift>period']" ## 窗口移到右边工作区
+## gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left "['<Super><Shift>comma']" ## 窗口移到左边工作区
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left "['<Super><Shift>p']" ## 窗口移到左边工作区
+##gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Super><Shift>period']" ## 窗口移到右边工作区
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Super><Shift>n']" ## 窗口移到右边工作区
 gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "['<Super><Alt>l']" ## 锁屏
 gsettings set org.gnome.settings-daemon.plugins.media-keys logout "['<Super><Alt>Escape']" ## 登出
 
