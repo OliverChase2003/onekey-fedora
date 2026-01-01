@@ -63,16 +63,16 @@ sudo dnf install -y \
 	langpacks-core-zh_CN
 ## install some basic desktop apps
 sudo dnf install -y \
-	alacritty \
+	kitty \
 	gnome-extensions-app \
 	gnome-tweaks \
 	gthumb \
 	celluloid
 
 ## nautilus
-sudo dnf copr enable monkeygold/nautilus-open-any-terminal -y
-sudo dnf install nautilus-open-any-terminal
-gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal alacritty
+##sudo dnf copr enable monkeygold/nautilus-open-any-terminal -y
+##sudo dnf install nautilus-open-any-terminal
+##gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal kitty
 
 ## set graphic as default
 sudo systemctl set-default graphical.target
