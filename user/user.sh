@@ -11,7 +11,8 @@ mkdir -p \
 	$HOME/videos \
 	$HOME/music \
 	$HOME/documents \
-	$HOME/templates \
+	$HOME/documents/templates \
+	$HOME/documents/public \
 	$HOME/softwares \
 	$HOME/.config \
 	$HOME/.cache \

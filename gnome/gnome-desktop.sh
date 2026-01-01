@@ -17,7 +17,6 @@ exclude_pkgs=(
 	gnome-logs
 	gnome-maps
 	gnome-weather
-	gnome-system-monitor
 	gnome-epub-thumbnailer
 	gnome-user-docs
 	gnome-user-share
@@ -75,4 +74,4 @@ sudo dnf install -y \
 ##gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal kitty
 
 ## set graphic as default
-sudo systemctl set-default graphical.target
+## sudo systemctl set-default graphical.target
