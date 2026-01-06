@@ -32,15 +32,25 @@ gsettings set org.gnome.desktop.wm.keybindings toggle-maximized "['<Super>m']" #
 gsettings set org.gnome.desktop.wm.keybindings begin-resize "['<Super>r']" ## 调整窗口大小（随后用left, down, up, right控制）
 gsettings set org.gnome.desktop.wm.keybindings begin-move "[]" ## 开始移动窗口（随后用left, down, up, right控制）（禁用）
 
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-1 "['<Super>0']" ## 进入第1个工作区
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>0']" ## 进入第1个工作区
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>0']" ## 进入第1个工作区
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Super>p']" ## 进入左边工作区
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Super>n']" ## 进入右边工作区
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-last "['<Super>e']" ## 进入最后一个工作区
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-last "['<Super>e']" ## 进入最后一个工作区
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Super>p']" ## 进入左边工作区
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Super>n']" ## 进入右边工作区
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-last "['<Super>e']" ## 进入最后一个工作区
 
-## gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left "['<Super><Shift>comma']" ## 窗口移到左边工作区
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>0']" ## 进入第1个工作区
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Super>p']" ## 进入左边工作区
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Super>n']" ## 进入右边工作区
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-last "['<Super>e']" ## 进入最后一个工作区
+
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-1 "[]" ## 进入第1个工作区
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left "['<Super><Shift>p']" ## 窗口移到左边工作区
-##gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Super><Shift>period']" ## 窗口移到右边工作区
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Super><Shift>n']" ## 窗口移到右边工作区
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-last "[]" ## 进入最后一个工作区
+
 gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "['<Super><Alt>l']" ## 锁屏
 gsettings set org.gnome.settings-daemon.plugins.media-keys logout "['<Super><Alt>Escape']" ## 登出
 

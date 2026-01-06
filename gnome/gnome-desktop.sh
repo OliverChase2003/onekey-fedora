@@ -60,6 +60,8 @@ sudo dnf install -y \
 ## install language support
 sudo dnf install -y \
 	langpacks-core-zh_CN
+sudo dnf install -y \
+	xdg-terminal-exec
 ## install some basic desktop apps
 sudo dnf install -y \
 	kitty \
