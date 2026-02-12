@@ -1,6 +1,6 @@
-download_dir = "$HOME/downloads"
-document_dir = "$HOME/documents"
-software_dir = "$HOME/softwares"
+## others
+
+source ../var/var.sh
 
 ## plymouth themes
 ## bugjump

@@ -2,15 +2,13 @@
 ## once then close it, gtk theme need firefox to be opened
 ## once.
 
-download_dir="$HOME/downloads"
-document_dir="$HOME/documents"
-software_dir="$HOME/softwares"
+## gnome theme
+source ../var/var.sh
 
 ## themes url
 whitesurgtk_url="https://github.com/vinceliuice/WhiteSur-gtk-theme.git"
-whitesurqt_url="https://github.com/FengZhongShaoNian/QWhiteSurGtkDecorations.git"
 
-## gtk theme
+## clone
 git clone "${whitesurgtk_url}" \
 	"${software_dir}/WhiteSur-gtk-theme/" --depth 1
 # install theme for desktop

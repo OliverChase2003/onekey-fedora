@@ -1,6 +1,6 @@
-download_dir="$HOME/downloads"
-document_dir="$HOME/documents"
-software_dir="$HOME/softwares"
+## qt theme
+
+source ../var/var.sh
 
 ## packages
 sudo dnf install -y \
@@ -14,7 +14,7 @@ sudo dnf install -y \
 	qt5-qtbase-static \
 	qt5-qtbase-private-devel \
 	qt5ct \
-	
+
 sudo dnf install -y \
 	qt6-qtbase-devel \
 	qt6-qtsvg-devel \
@@ -27,7 +27,7 @@ sudo dnf install -y \
 ## themes url
 whitesurqt_url="https://github.com/FengZhongShaoNian/QWhiteSurGtkDecorations.git"
 
-## clone QT decoration
+## clone
 git clone ${whitesurqt_url} \
 	${software_dir}/QWhiteSurGtkDecorations/
 cd ${software_dir}/QWhiteSurGtkDecorations/
@@ -46,3 +46,4 @@ cmake -DUSE_QT6=true -DHAS_QT6_SUPPORT=true ..
 make
 sudo cp src/libqwhitesurgtkdecorations.so \
 	/usr/lib64/qt6/plugins/wayland-decoration-client/
+cd .. && rm build -rf

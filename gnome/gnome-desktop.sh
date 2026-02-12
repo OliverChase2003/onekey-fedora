@@ -1,9 +1,6 @@
 ## gnome desktop
 
-## default user dirs
-download_dir = "$HOME/downloads"
-document_dir = "$HOME/documents"
-software_dir = "$HOME/softwares"
+source ../var/var.sh
 
 ## list excluded pkgs
 exclude_pkgs=(
@@ -64,6 +61,7 @@ sudo dnf install -y \
 	xdg-terminal-exec
 ## install some basic desktop apps
 sudo dnf install -y \
+	firefox \
 	kitty \
 	gnome-extensions-app \
 	gnome-tweaks \

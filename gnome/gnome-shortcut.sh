@@ -32,16 +32,16 @@ gsettings set org.gnome.desktop.wm.keybindings toggle-maximized "['<Super>m']" #
 gsettings set org.gnome.desktop.wm.keybindings begin-resize "['<Super>r']" ## 调整窗口大小（随后用left, down, up, right控制）
 gsettings set org.gnome.desktop.wm.keybindings begin-move "[]" ## 开始移动窗口（随后用left, down, up, right控制）（禁用）
 
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>0']" ## 进入第1个工作区
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>0']" ## 进入第1个工作区
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Super>p']" ## 进入左边工作区
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Super>n']" ## 进入右边工作区
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-last "['<Super>e']" ## 进入最后一个工作区
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Super>p']" ## 进入左边工作区
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Super>n']" ## 进入右边工作区
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-last "['<Super>e']" ## 进入最后一个工作区
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>1']" ## 进入第1个工作区
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Super>2']" ## 进入第2个工作区
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Super>3']" ## 进入第3个工作区
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Super>4']" ## 进入第4个工作区
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 "['<Super>5']" ## 进入第5个工作区
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Super>6']" ## 进入第6个工作区
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-7 "['<Super>7']" ## 进入第7个工作区
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-8 "['<Super>8']" ## 进入第8个工作区
 
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>0']" ## 进入第1个工作区
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>0']" ## 进入最左边工作区
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Super>p']" ## 进入左边工作区
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Super>n']" ## 进入右边工作区
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-last "['<Super>e']" ## 进入最后一个工作区
