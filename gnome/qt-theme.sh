@@ -36,8 +36,8 @@ cd ${software_dir}/QWhiteSurGtkDecorations/
 
 ## modify decoration size and look
 sed -i.bak \
--e 's|^static constexpr int ceButtonSpacing = 8;|static constexpr int ceButtonSpacing = 6;|' \
--e 's|^static constexpr int ceButtonMarginRight = 15;|static constexpr int ceButtonMarginRight = 11|' \
+-e 's|^static constexpr int ceButtonSpacing = 6;|static constexpr int ceButtonSpacing = 8;|' \
+-e 's|^static constexpr int ceButtonMarginRight = 15;|static constexpr int ceButtonMarginRight = 11;|' \
 -e 's|^static constexpr int ceTitlebarHeight = 38;|static constexpr int ceTitlebarHeight = 32;|' \
 ./src/qwhitesurgtkdecorations.cpp
 
