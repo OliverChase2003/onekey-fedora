@@ -13,6 +13,7 @@ sudo dnf install -y \
 	google-noto-sans-mono-cjk-vf-fonts \
 	google-noto-emoji-fonts \
 	google-noto-color-emoji-fonts
+
 sudo dnf install -y \
 	adobe-source-han-sans-cn-fonts \
 	adobe-source-han-serif-cn-fonts \
