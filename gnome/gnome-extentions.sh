@@ -30,3 +30,8 @@ for ext in "${extensions[@]}"; do
 	gnome-extensions-cli install "$ext"
 done
 
+## other extensions
+git clone https://github.com/jeffshee/gnome-ext-hanabi.git $software_dir/
+cd $software_dir/gnome-ext-hanabi/
+sudo dnf install meson -y
+./run.sh install
