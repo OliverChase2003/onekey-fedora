@@ -1,10 +1,7 @@
-## add user group
-## virtual mechine
-sudo usermod -aG libvirt $(whoami)
 ## usb device
 sudo usermod -aG dialout $(whoami)
 
-set xdg user dirs
+## set xdg user dirs
 mkdir -p \
 	$HOME/downloads \
 	$HOME/pictures \
