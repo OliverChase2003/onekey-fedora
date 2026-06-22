@@ -1,6 +1,5 @@
 nvidia_install() {
 	sudo dnf install -y \
-		gcc \
 		kernel-headers \
 		kernel-devel \
 		akmod-nvidia \
@@ -10,7 +9,7 @@ nvidia_install() {
 	sudo dracut --force
 }
 
-nvidia_sign_kernel() {
+akmod_sign_kernel() {
 	sudo dnf install -y \
 		kmodtool \
 		akmods \
@@ -26,7 +25,7 @@ case "$1" in
 		nvidia_install
 		;;
 	--sign)
-		nvidia_sign_kernel
+		akmod_sign_kernel
 		;;
 	*)
 		echo "Usage: $0 [--install|--sign]"

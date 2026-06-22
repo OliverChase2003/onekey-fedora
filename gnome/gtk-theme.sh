@@ -1,4 +1,4 @@
-## gnome theme
+## gtk theme
 source ../var/var.sh
 
 ## themes url

@@ -19,16 +19,21 @@ install_dnf_fonts() {
 		adobe-source-sans-pro-fonts
 }
 
-install_nerdfont() {
+install_nerdfont_copr() {
+	sudo dnf copr enable che/nerd-fonts
+	sudo dnf install install -y nerd-fonts
+}
+
+install_nerdfont_git() {
 	mkdir -p "$font_dir"
 	curl -Lo "$download_dir/$nerdfont.zip" "$nerdfonturl"
 	unzip -o "$download_dir/$nerdfont.zip" -d "$font_dir"
 }
 
-case "$1" in
+case $1 in
 	--install)
 		install_dnf_fonts
-		install_nerdfont
+		install_nerdfont_copr
 		;;
 	*)
 		echo "Usage: $0 [--install]"
