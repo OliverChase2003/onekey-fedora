@@ -85,26 +85,25 @@ set_gsetting_opts() {
 	## xdg-terminal-exec
 	sudo dnf install -y \
 		xdg-terminal-exec
-	gsettings set org.gnome.desktop.default-applications.terminal exec 'xdg-terminal-exec'
 	## nautilus open
 	sudo dnf copr enable monkeygold/nautilus-open-any-terminal -y && sudo dnf update -y
 	sudo dnf install -y \
 		nautilus-open-any-terminal
-	gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal kitty
 }
 
 case "$1" in
-	--install | install)
+	--install)
 		install_gnome_desktop
 		install_alsa_support
 		install_base_packages
 		install_desktop_apps
-		;;
-	--gsetting)
 		set_gsetting_opts
 		;;
+	--graph_default)
+		set_graphic_default
+		;;
 	*)
-		echo "Usage: $0 [--install|--gsetting]"
+		echo "Usage: $0 [--install|--graph_default]"
 		exit 1
 		;;
 esac

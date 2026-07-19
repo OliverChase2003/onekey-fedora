@@ -29,6 +29,7 @@ install_deps() {
 build_and_install() {
 	cd "$software_dir/$theme" || exit 1
 
+	rm -rf build/
 	## modify decoration size and look
 	sed -i.bak \
 		-e 's|^static constexpr int ceButtonSpacing = 6;|static constexpr int ceButtonSpacing = 8;|' \

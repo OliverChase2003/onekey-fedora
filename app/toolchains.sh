@@ -18,7 +18,8 @@ sudo dnf install -y \
 
 ## rust
 sudo dnf install -y \
-	cargo
+	rustup
+rustup-init -y
 
 ## node
 sudo dnf install -y \

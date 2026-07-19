@@ -1,14 +1,3 @@
-nvidia_install() {
-	sudo dnf install -y \
-		kernel-headers \
-		kernel-devel \
-		akmod-nvidia \
-		nvidia-smi
-
-	sudo akmods --force
-	sudo dracut --force
-}
-
 akmod_sign_kernel() {
 	sudo dnf install -y \
 		kmodtool \
@@ -18,12 +7,12 @@ akmod_sign_kernel() {
 
 	sudo kmodgenca -a
 	sudo mokutil --import /etc/pki/akmods/certs/public_key.der
+
+    echo
+    echo "Reboot and complete MOK enrollment from the blue MOK Manager screen."
 }
 
 case "$1" in
-	--install)
-		nvidia_install
-		;;
 	--sign)
 		akmod_sign_kernel
 		;;
